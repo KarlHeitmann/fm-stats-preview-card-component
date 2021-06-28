@@ -39,13 +39,14 @@ body {
 }
 
 .card__content {
-  margin: 1rem 0px;
+  margin: 2rem 0px;
   color: var(--color-white-main-paragraph);
 }
 
 .card__stats {
   display: -ms-grid;
   display: grid;
+  margin-top: 6rem;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
   text-transform: uppercase;
@@ -67,6 +68,13 @@ body {
 
 .card__title > span {
   color: var(--color-soft-violet);
+}
+
+.card__img > img {
+  width: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .card_blabla {

@@ -37,12 +37,13 @@ body {
   }
 
   &__content {
-    margin: 1rem 0px;
+    margin: 2rem 0px;
     color: var(--color-white-main-paragraph);
   }
 
   &__stats {
     display: grid;
+    margin-top: 6rem;
     grid-template-columns: 1fr 1fr 1fr;
     text-transform: uppercase;
     color: var(--color-white-stat-headings);
@@ -61,6 +62,12 @@ body {
     & > span {
       color: var(--color-soft-violet);
     }
+  }
+
+  &__img > img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
   }
 }
 
