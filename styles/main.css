@@ -64,6 +64,14 @@ body {
       grid-template-columns: 1fr 1fr 1fr;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .card__stats {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 2rem;
+  }
+}
+
 .card__stats__item--numbers {
   color: var(--color-white-main-heading);
   text-transform: none;

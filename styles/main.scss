@@ -73,6 +73,11 @@ body {
     display: grid;
     margin-top: 6rem;
     grid-template-columns: 1fr 1fr 1fr;
+    @include respond(phone) {
+      grid-template-columns: 1fr;
+      grid-gap: 2rem;
+    }
+
     &__item {
       &--numbers {
         color: var(--color-white-main-heading);
