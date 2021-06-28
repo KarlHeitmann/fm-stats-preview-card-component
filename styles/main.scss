@@ -59,6 +59,9 @@ body {
 
   &__text {
     padding: 4rem;
+    @include respond(phone) {
+      text-align: center;
+    }
   }
 
   &__content {
