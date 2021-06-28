@@ -73,13 +73,17 @@ body {
     display: grid;
     margin-top: 6rem;
     grid-template-columns: 1fr 1fr 1fr;
-    text-transform: uppercase;
-    color: var(--color-white-stat-headings);
-    font-weight: 700;
-    &--numbers {
-      color: var(--color-white-main-heading);
-      text-transform: none;
-      font-size: 1.5rem;
+    &__item {
+      &--numbers {
+        color: var(--color-white-main-heading);
+        text-transform: none;
+        font-size: 1.5rem;
+        font-weight: 700;
+      }
+      &--text {
+        text-transform: uppercase;
+        color: var(--color-white-stat-headings);
+      }
     }
   }
 

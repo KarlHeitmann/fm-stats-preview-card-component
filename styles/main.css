@@ -62,15 +62,18 @@ body {
   margin-top: 6rem;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-  text-transform: uppercase;
-  color: var(--color-white-stat-headings);
-  font-weight: 700;
 }
 
-.card__stats--numbers {
+.card__stats__item--numbers {
   color: var(--color-white-main-heading);
   text-transform: none;
   font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.card__stats__item--text {
+  text-transform: uppercase;
+  color: var(--color-white-stat-headings);
 }
 
 .card__title {
