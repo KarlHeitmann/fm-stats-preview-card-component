@@ -27,7 +27,7 @@ body {
 
 .card {
   background-color: var(--color-background-card);
-  margin: 8rem;
+  margin: 4rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -35,7 +35,7 @@ body {
 }
 
 .card__text {
-  padding: 5rem;
+  padding: 4rem;
 }
 
 .card__content {
@@ -43,9 +43,25 @@ body {
   color: var(--color-white-main-paragraph);
 }
 
+.card__stats {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  text-transform: uppercase;
+  color: var(--color-white-stat-headings);
+  font-weight: 700;
+}
+
+.card__stats--numbers {
+  color: var(--color-white-main-heading);
+  text-transform: none;
+  font-size: 1.5rem;
+}
+
 .card__title {
   color: var(--color-white-main-heading);
-  font-size: 1.5rem;
+  font-size: 3rem;
   font-weight: 700;
 }
 

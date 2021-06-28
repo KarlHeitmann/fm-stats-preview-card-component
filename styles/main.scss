@@ -28,12 +28,12 @@ body {
 .card {
   background-color: var(--color-background-card);
 
-  margin: 8rem;
+  margin: 4rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
 
   &__text {
-    padding: 5rem;
+    padding: 4rem;
   }
 
   &__content {
@@ -41,9 +41,22 @@ body {
     color: var(--color-white-main-paragraph);
   }
 
+  &__stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-transform: uppercase;
+    color: var(--color-white-stat-headings);
+    font-weight: 700;
+    &--numbers {
+      color: var(--color-white-main-heading);
+      text-transform: none;
+      font-size: 1.5rem;
+    }
+  }
+
   &__title {
     color: var(--color-white-main-heading);
-    font-size: 1.5rem;
+    font-size: 3rem;
     font-weight: 700;
     & > span {
       color: var(--color-soft-violet);
