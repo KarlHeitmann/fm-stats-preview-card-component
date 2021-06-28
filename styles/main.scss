@@ -21,17 +21,30 @@
 
 body {
   background-color: var(--color-background-color);
+  font-family: 'Inter', sans-serif;
+  /* font-family: 'Lexend Deca', sans-serif; */
 }
 
 .card {
   background-color: var(--color-background-card);
 
-  margin: 100px 100px;
+  margin: 8rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
 
+  &__text {
+    padding: 5rem;
+  }
+
+  &__content {
+    margin: 1rem 0px;
+    color: var(--color-white-main-paragraph);
+  }
+
   &__title {
     color: var(--color-white-main-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
     & > span {
       color: var(--color-soft-violet);
     }
